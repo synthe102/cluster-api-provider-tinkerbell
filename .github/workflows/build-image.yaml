@@ -72,4 +72,4 @@ jobs:
       - name: Push the images
         run: |
           oras version
-          oras push ${REGISTRY}/${{ github.repository }}/ubuntu-2004-efi:${KUBERNETES_SEM_VERSION}.gz --artifact-type application/vnd.acme.rocket.config image-builder/images/capi/output/ubuntu-2004-efi-kube-${KUBERNETES_SEM_VERSION}.gz
+          oras push ${REGISTRY}/${{ github.repository }}/ubuntu-2004-efi:${KUBERNETES_SEM_VERSION}.gz --artifact-type application/vnd.acme.rocket.config image-builder/images/capi/output/ubuntu-2004-kube-${KUBERNETES_SEM_VERSION}.gz
